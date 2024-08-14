@@ -1,4 +1,4 @@
-function Menu() {
+function Blogs() {
     return (
       <>
         <header>
@@ -11,5 +11,5 @@ function Menu() {
     );
   };
   
-  export default Menu;
+  export default Blogs;
   
