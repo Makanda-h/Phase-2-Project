@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { useState } from 'react'
+=======
+import  React from 'react'
+import NavBar from './components/NavBar'
+>>>>>>> main
 import './App.css'
 import NavBar from './components/NavBar';
 import Cart from './components/cart/Cart'
@@ -9,6 +14,7 @@ import Contact from './components/Contact';
 
 
 function App() {
+<<<<<<< HEAD
 
   return (
     <BrowserRouter>
@@ -21,6 +27,17 @@ function App() {
       </Routes>
     </BrowserRouter>
 );
+=======
+  
+  
+  return (
+    <>
+      <header>
+        <NavBar />
+      </header>
+    </>
+  )
+>>>>>>> main
 }
 export default App;
 
