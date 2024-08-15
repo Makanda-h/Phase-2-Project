@@ -1,62 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    padding: 15px 30px;
-  }
-  
-  .logo h1 {
-    color: #fff;
-    font-size: 24px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li {
-    position: relative;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  .nav-links li a:hover,
-  .nav-links li a.active {
-    color: #d4af37; /* Gold color */
-  }
-  
-  .icons {
-    color: #fff;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .icons a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .icons a:hover {
-    color: #d4af37; /* Gold color */
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark background */
+  padding: 0px 10px; /* Padding for navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow */
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 24px; /* Increased font size */
+  letter-spacing: 1px; /* Spacing for logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-links li {
+  margin: 0 20px; /* Increased space around nav links */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px; /* Font size */
+  transition: color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #d4af37; /* Gold color */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.icons {
+  display: flex;
+  align-items: center; /* Center icons vertically */
+  gap: 15px; /* Space between icons */
+}
+
+.icons a {
+  color: #fff; /* Cart icon color set to white */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.icons a:hover {
+  color: #d4af37; /* Gold color on hover */
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.search-icon:hover {
+  color: #d4af37; /* Gold color on hover */
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: borde
+  r-color 0.3s; /* Transition for focus effect */
+}
+
+.search-input:focus {
+  border-color: #d4af37; /* Gold border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.search-button {
+  margin-left: 5px;
+  padding: 8px 12px;
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
 

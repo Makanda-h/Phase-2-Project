@@ -1,9 +1,25 @@
 import { NavLink } from "react-router-dom";
 import "../assets/NavBar.css";
-import React from "react";
+import React, { useState } from "react";
 
-/* define the NavBar component */
-function NavBar(){
+/* Define the NavBar component */
+function NavBar() {
+  const [isInputVisible, setIsInputVisible] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const toggleInput = () => {
+    setIsInputVisible(!isInputVisible);
+  };
+
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearch = () => {
+    console.log("Searching for:", searchTerm);
+    // Implement search logic here
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -33,11 +49,29 @@ function NavBar(){
         </li>
       </ul>
       <div className="icons">
-        <NavLink to="/search"><span className="material-icons">search</span></NavLink>
-        <NavLink to="/cart"><span className="material-icons">shopping_cart</span></NavLink>
+        <button className="search-icon" onClick={toggleInput}>
+          <span className="material-icons">search</span>
+        </button>
+        {isInputVisible && (
+          <div className="search-input-container">
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={handleInputChange}
+              placeholder="Search..."
+              className="search-input"
+            />
+            <button onClick={handleSearch} className="search-button">
+              Search
+            </button>
+          </div>
+        )}
+        <NavLink to="/cart">
+          <span className="material-icons">shopping_cart</span>
+        </NavLink>
       </div>
     </nav>
   );
-};
+}
 
 export default NavBar;
