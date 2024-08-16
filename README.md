@@ -2,10 +2,10 @@ FOODERS.COM
 Author: GROUP 4
 
 Group Members
-abdinasir.dahir@student.moringaschool.com
-alvin.sarisar@student.moringaschool.com
-Barkley.igonyi@student.moringaschool.com
-hope.makanda@student.moringaschool.com
+Abdinasir Dahir:  abdinasir.dahir@student.moringaschool.com
+Alvin Sarisar:  alvin.sarisar@student.moringaschool.com
+Barkelry Igonyi:  Barkley.igonyi@student.moringaschool.com
+Hope Makanda:  hope.makanda@student.moringaschool.com
 
 App Description
 Fooders.com a React application that displays a list of food items in the menu page, allows a customer to make an order, check their cart, checkout and leave a review.
@@ -54,15 +54,10 @@ Facilitate the checkout process, including payment options and order confirmatio
 Contributing
 This project is not open for external contributions as it is a group project for learning purposes. However, feedback and suggestions are welcome.
 
-contact
-Email: hopemakanda.student
-
-License
-This project is licensed under the MIT License.
 
 Acknowledgments
 Thank you to the team at Moringa School for providing the guidance and resources to complete this project.
-
+Thanyou to the group memebers for their hardwork and particiation.
 
 
 
