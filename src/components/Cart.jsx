@@ -39,4 +39,4 @@ function Cart({ cart, updateCart }) {
   );
 }
 
-export default CartOverlay;
+export default Cart;
