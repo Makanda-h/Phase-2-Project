@@ -9,7 +9,7 @@ function Cart({ cart, updateCart }) {
   const incrementQuantity = (productId) => {
     updateCart(productId, 1); // increment the quantity of the product
   };
-
+  
   const decrementQuantity = (productId) => {
     updateCart(productId, -1); // decrement the quantity of the product
   };
