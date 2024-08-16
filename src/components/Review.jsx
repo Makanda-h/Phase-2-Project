@@ -1,30 +1,32 @@
 import React, { useState } from 'react';
-import NavBar from "./NavBar"
-import '../assets/Review.css'; 
+
 
 const Review = () => {
   const [reviews, setReviews] = useState([
     {
       id: 1,
-      text: "Lorem ipsum odor amet, consectetuer adipiscing elit. Iaculis sagittis pulvinar nec; volutpat etiam amet netus semper. Eleifend nascetur ornare suscipit, nec venenatis et.",
-      name: "JOHN DOE",
+      text: "RENOWNED FOR ITS VERSATILITY IN THE KITCHEN, RED KING CRAB CAN BE PREPARED IN VARIOUS WAYS, FROM SIMPLE STEAMING OR BOILING TO ELABORATE PREPARATIONS SUCH AS GRILLING INCORPORATING.",
+      name: "STEVEN H. PAXSON",
       title: "CEO & Founder",
+      img: "profile1.jpg",
     },
     {
       id: 2,
-      text: "Lorem ipsum odor amet, consectetuer adipiscing elit. Iaculis sagittis pulvinar nec; volutpat etiam amet netus semper. Eleifend nascetur ornare suscipit, nec venenatis et.",
-      name: "JANE DOE",
+      text: "RENOWNED FOR ITS VERSATILITY IN THE KITCHEN, RED KING CRAB CAN BE PREPARED IN VARIOUS WAYS, FROM SIMPLE STEAMING OR BOILING TO ELABORATE PREPARATIONS SUCH AS GRILLING INCORPORATING.",
+      name: "STEVEN H. PAXSON",
       title: "CEO & Founder",
+      img: "profile2.jpg",
     },
     {
       id: 3,
-      text: "Lorem ipsum odor amet, consectetuer adipiscing elit. Iaculis sagittis pulvinar nec; volutpat etiam amet netus semper. Eleifend nascetur ornare suscipit, nec venenatis et.",
-      name: "JIM DOE",
+      text: "RENOWNED FOR ITS VERSATILITY IN THE KITCHEN, RED KING CRAB CAN BE PREPARED IN VARIOUS WAYS, FROM SIMPLE STEAMING OR BOILING TO ELABORATE PREPARATIONS SUCH AS GRILLING INCORPORATING.",
+      name: "STEVEN H. PAXSON",
       title: "CEO & Founder",
+      img: "profile3.jpg",
     },
   ]);
 
-  const [newReview, setNewReview] = useState({ text: '', name: '', title: '', img: '' });
+  const [newReview, setNewReview] = useState({ text: '', name: '', title: ''});
 
   const handleChange = (e) => {
     setNewReview({ ...newReview, [e.target.name]: e.target.value });
@@ -32,7 +34,7 @@ const Review = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (newReview.text && newReview.name && newReview.img) {
+    if (newReview.text && newReview.name ) {
       setReviews([...reviews, { ...newReview, id: reviews.length + 1 }]);
       setNewReview({ text: '', name: '', title: ''});
     }
@@ -43,14 +45,7 @@ const Review = () => {
   };
 
   return (
-    <>
-      <header>
-      <NavBar />
-      </header>
-
-      <main>
-
-      <div className="feedback-section">
+    <div className="feedback-section">
       <h2>CUSTOMER FEEDBACK</h2>
       <h3>WHAT HAVE LOT'S OF HAPPY CUSTOMER EXPLORE FEEDBACK</h3>
       <div className="reviews">
@@ -59,7 +54,7 @@ const Review = () => {
             <div className="quote">“</div>
             <p>{review.text}</p>
             <div className="reviewer">
-             
+              
               <div>
                 <strong>{review.name}</strong>
                 <span>{review.title}</span>
@@ -94,13 +89,17 @@ const Review = () => {
           value={newReview.title}
           onChange={handleChange}
         />
+        <input
+          type="text"
+          name="img"
+          placeholder="Image URL"
+          value={newReview.img}
+          onChange={handleChange}
+          required
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
-      </main>
-    
-    </>
-    
   );
 };
 
