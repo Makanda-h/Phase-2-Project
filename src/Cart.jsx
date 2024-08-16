@@ -21,7 +21,7 @@ function Cart({ cart, updateCart }) {
         <div className="cart-items">
           {cart.map((item) => (
             <div key={item.id} className="cart-item">
-              <img src={item.id} alt={item.name} />
+              <img src={item.image} alt={item.name} />
               <h2>{item.name}</h2>
               <div className="quantity-control">
                 <button onClick={() => decrementQuantity(item.id)}>-</button>

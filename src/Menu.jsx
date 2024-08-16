@@ -5,7 +5,7 @@ const Menu = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/products')
+    fetch('http://localhost:4000/products')
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error('Error fetching data:', error));
