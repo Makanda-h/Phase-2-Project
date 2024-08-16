@@ -1,17 +1,14 @@
-import  React from 'react'
-import NavBar from './components/NavBar'
-import './App.css'
+import React from 'react';
+import Checkout from './components/Checkout';
 
 function App() {
-  
-  
   return (
-    <>
-      <header>
-        <NavBar />
-      </header>
-    </>
-  )
+    <div>
+      <NavBar />
+      <Cart>
+        <Checkout />
+      </Cart>
+    </div>
+  );
 }
-
-export default App
+export default App;
