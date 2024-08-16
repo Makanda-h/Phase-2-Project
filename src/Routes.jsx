@@ -1,10 +1,10 @@
-import About from './About';
+import About from './components/About';
 import Menu from './Menu';
-import Contact from './Contact';
-import Review from './Review';
+import Contact from './components/Contact';
+import Review from './components/Review';
 import Search from './Search';
-import Cart from './Cart'
-import App from '../App';
+import Cart from './components/Cart'
+import App from './App';
 import  React from 'react'
 
 
