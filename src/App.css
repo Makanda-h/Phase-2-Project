@@ -49,6 +49,7 @@ nav a:hover {
   transition: transform 0.3s;
 }
 
+<<<<<<< HEAD
 .product-card:hover {
   transform: translateY(-5px);
 }
@@ -99,12 +100,24 @@ nav a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+=======
+/* Cart Styles */
+.cart-items {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+>>>>>>> main
 .cart-item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
+<<<<<<< HEAD
 }
 
 .cart-item:last-child {
@@ -325,6 +338,8 @@ h2 {
   to {
     opacity: 1;
   }
+=======
+>>>>>>> main
 }
 /* Navbar Styles */
 .navbar {
@@ -336,6 +351,7 @@ h2 {
   box-shadow: 0 8px 8px rgba(242, 198, 3, 0.973);
 }
 
+<<<<<<< HEAD
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
@@ -391,3 +407,70 @@ h2 {
   }
 }
 /* Footer Styles */
+=======
+.cart-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.cart-item img {
+  width: 100px; /* Ensure images in the cart have a uniform width */
+  height: 100px; /* Set a uniform height for images */
+  object-fit: cover; /* Ensures the image scales properly */
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.cart-item h2 {
+  font-size: 18px;
+  flex: 1;
+}
+
+.cart-item p {
+  margin: 0;
+  color: #555;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.total-amount {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Quantity Control Styles */
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quantity-control button:hover {
+  background-color: #f5f7f9;
+}
+
+.quantity-control button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.quantity-control p {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #555;
+}
+>>>>>>> main
