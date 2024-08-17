@@ -68,11 +68,11 @@ nav a:hover {
 
 .product-card p {
   margin: 5px 0;
-  color: #f5c907;
+  color: maroon;
 }
 
 .product-card button {
-  background-color: #ffda07;
+  background-color: maroon;
   color: #ffffff;
   border: none;
   padding: 10px 15px;
@@ -195,7 +195,7 @@ h2 {
 }
 
 .review {
-    background-color: #efeb05;
+    background-color: grey;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;

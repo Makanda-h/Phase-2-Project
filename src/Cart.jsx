@@ -7,11 +7,11 @@ function Cart({ cart, updateCart }) {
   ); // calculate the total amount of the cart
 
   const incrementQuantity = (productId) => {
-    updateCart(productId, 1); // increment the quantity of the product
+    updateCart(productId, 1); // increases the quantity of the product
   };
   
   const decrementQuantity = (productId) => {
-    updateCart(productId, -1); // decrement the quantity of the product
+    updateCart(productId, -1); // decreases the quantity of the product
   };
 // display the cart items returned jsx
   return (

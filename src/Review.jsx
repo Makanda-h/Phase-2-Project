@@ -89,14 +89,14 @@ const Review = () => {
           value={newReview.title}
           onChange={handleChange}
         />
-        <input
+        {/* <input
           type="text"
           name="img"
           placeholder="Image URL"
           value={newReview.img}
           onChange={handleChange}
           required
-        />
+        /> */}
         <button type="submit">Submit</button>
       </form>
     </div>
