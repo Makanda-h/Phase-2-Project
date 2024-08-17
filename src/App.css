@@ -391,3 +391,59 @@ h2 {
   }
 }
 /* Footer Styles */
+.checkout-card button {
+  background-color: maroon;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(222, 0, 0, 0.1);}
+
+.checkout-card button:hover {
+  background-color: #02080e;
+}
+.checkout-card {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.checkout-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.checkout-card img {
+  width: 100px; /* Ensure images in the cart have a uniform width */
+  height: 100px; /* Set a uniform height for images */
+  object-fit: cover; /* Ensures the image scales properly */
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.checkout-card h2 {
+  font-size: 18px;
+  flex: 1;
+}
+
+.checkout-card p {
+  margin: 0;
+  color: #555;
+  padding: 10px;
+}
+.checkout-items{
+  display: flex;
+  flex-direction: column;
+}
