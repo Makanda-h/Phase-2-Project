@@ -47,7 +47,7 @@ const Review = () => {
   return (
     <div className="feedback-section">
       <h2>CUSTOMER FEEDBACK</h2>
-      <h3>WHAT HAVE LOT'S OF HAPPY CUSTOMER EXPLORE FEEDBACK</h3>
+      <h3>EXPLORE SOME OF OUR CUTOMER'S FEEDBACK</h3>
       <div className="reviews">
         {reviews.map((review) => (
           <div className="review" key={review.id}>
@@ -65,7 +65,7 @@ const Review = () => {
         ))}
       </div>
       <form onSubmit={handleSubmit} className="review-form">
-        <h3>Submit a Review</h3>
+        <h2>Submit a Review</h2>
         <input
           type="text"
           name="text"

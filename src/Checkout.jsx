@@ -28,6 +28,7 @@ function Checkout({ cart }) {
       <div className="checkout-items">
         {cart.map((item) => (
           <div key={item.id} className="checkout-card">
+            <img src={item.image} alt={item.name} />
             <h2>{item.name}</h2>
             <p>Price: {item.price}</p>
             <p>Subtotal: {item.price * item.quantity}</p>
@@ -35,11 +36,7 @@ function Checkout({ cart }) {
         ))}
       </div>
       <h2>Total Amount: {totalAmount}</h2>
-      <button
-        onClick={showAlert}
-      >
-        Place Order
-      </button>
+      <button onClick={showAlert}>Place Order</button>
     </div>
   );
 }

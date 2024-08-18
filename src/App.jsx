@@ -10,7 +10,6 @@ import "./App.css";
 import Review from "./Review";
 import { Footer } from "./Footer";
 
-
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
@@ -69,25 +68,27 @@ function App() {
   };
 
   return (
-    <Router>
-      <Navbar />
+    <div className="App">
+      <Router>
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<VideoAd />} />
-        <Route
-          path="/home"
-          element={<Home products={products} addToCart={addToCart} />}
-        />
-        <Route
-          path="/cart"
-          element={<Cart cart={cart} updateCart={updateCart} />}
-        />
-        <Route path="/checkout" element={<Checkout cart={cart} />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/review" element={<Review />} />
-      </Routes>
-      <Footer />
-    </Router>
+        <Routes>
+          <Route path="/" element={<VideoAd />} />
+          <Route
+            path="/home"
+            element={<Home products={products} addToCart={addToCart} />}
+          />
+          <Route
+            path="/cart"
+            element={<Cart cart={cart} updateCart={updateCart} />}
+          />
+          <Route path="/checkout" element={<Checkout cart={cart} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/review" element={<Review />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

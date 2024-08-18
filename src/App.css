@@ -149,7 +149,7 @@ h2 {
 }
 
 .quantity-control button {
-  background-color: #007bff;
+  background-color: maroon;
   color: #ffffff;
   border: none;
   padding: 5px 10px;
@@ -237,7 +237,7 @@ h2 {
 
 .reviewer button {
     margin-left: auto;
-    background-color: #ff5a00;
+    background-color: #3b1906;
     color: white;
     border: none;
     border-radius: 5px;
@@ -297,7 +297,7 @@ h2 {
   justify-content: top;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
-  color: rgb(253, 215, 2);
+  color: #EDC967;
   padding: 20px;
 }
 
@@ -333,13 +333,13 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 8px 8px rgba(242, 198, 3, 0.973);
+  box-shadow: 0 8px 8px rgba(226, 196, 27, 0.973);
 }
 
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
-  color: #f8b400;
+  color: #EDC967;
 }
 
 .navbar-logo {
@@ -364,12 +364,12 @@ h2 {
 }
 
 .navbar-item:hover {
-  background-color: #f8b400;
+  background-color: #EDC967;
   color: #1a1a1a;
 }
 
 .navbar-item:active {
-  background-color: #e09d00;
+  background-color: #EDC967;
   color: #ffffff;
 }
 
@@ -390,7 +390,7 @@ h2 {
     text-align: left;
   }
 }
-/* Footer Styles */
+/* Checkout Styles */
 .checkout-card button {
   background-color: maroon;
   color: #ffffff;
@@ -446,4 +446,27 @@ h2 {
 .checkout-items{
   display: flex;
   flex-direction: column;
+}
+.app {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.footer-container {
+  margin-top: auto;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.footer-container h2 {
+  color: #ffffff;
+}
+.feedback-section button:hover {
+    background-color: red;
+}
+.cuisine-philosophy img {
+  width: 20%;
 }
