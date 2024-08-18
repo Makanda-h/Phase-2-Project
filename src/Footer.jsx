@@ -48,7 +48,7 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="footer-section">
+      <div className="footer-text">
         <span>© 2024 Food Delivery. All Rights Reserved.</span>
       </div>
     </footer>

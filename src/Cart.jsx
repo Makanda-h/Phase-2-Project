@@ -28,12 +28,12 @@ function Cart({ cart, updateCart }) {
                 <p>{item.quantity}</p>
                 <button onClick={() => incrementQuantity(item.id)}>+</button>
               </div>
-              <p>Price:{item.price}</p>
+              <p>Price:  {item.price}</p>
               <p>Subtotal: {item.price * item.quantity}</p>
             </div>
           ))}
         </div>
-        <h2>Total Amount:{totalAmount}</h2>
+        <h1>Total Amount:   {totalAmount}</h1>
       </div>
     </>
   );
